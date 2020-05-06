@@ -1,6 +1,6 @@
-FROM ubuntu
+FROM ubuntu:18.04
 
-RUN apt-get update &&  \
+RUN apt-get update -y &&  \
 	apt-get install git -y && \
 	apt-get install npm -y && \
 	npm install -g testcafe -y && \
